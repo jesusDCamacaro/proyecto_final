@@ -11,7 +11,7 @@
         display: flex;
         padding: 1rem;
         margin: 1rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         // background-color: darkred;
         iframe{
@@ -20,7 +20,13 @@
     
         h3{
             margin: 3rem;
-            color: rgb(255, 255, 255);
+            text-align: center;
+            
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: rgb(255, 255, 255);
+            }
         }
     }
 
