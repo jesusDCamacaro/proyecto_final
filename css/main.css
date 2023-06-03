@@ -63,3 +63,57 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+
+.container_ticket_list {
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container_ticket_list ul {
+  width: 85%;
+}
+
+.ticket_list {
+  list-style-type: none;
+  padding: 0;
+}
+.ticket_list li {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 1.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ticket_list li .fecha_evento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ticket_list li p {
+  font-size: 1vw;
+}
+
+.ticket_list li:hover {
+  background-color: #5a5a5a;
+}
