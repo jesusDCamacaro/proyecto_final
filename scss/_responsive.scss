@@ -1,0 +1,30 @@
+// ----------RESPONSIVE DE TOURS-----------
+
+@media (max-width: 800px){
+    .ticket_list{
+        .fecha_evento{
+            flex-direction: column-reverse;
+        }
+        p{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+// ----------RESPONSIVE DE HISTORIA-------------
+
+
+@media (max-width: 1020px){
+    .imagenes_conciertos{
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            margin: 2rem;
+        }
+    }
+}

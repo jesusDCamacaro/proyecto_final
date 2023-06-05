@@ -1,6 +1,6 @@
 .nav a {
   font-size: medium;
-  color: rgb(255, 255, 255);
+  color: #B1B6B4;
   font-family: "tex_gyre_herosregular";
 }
 
@@ -55,7 +55,7 @@ body {
 .container_video .video_musica h3 a {
   text-decoration: none;
   list-style: none;
-  color: rgb(255, 255, 255);
+  color: #B1B6B4;
 }
 .container_video .video_invertido {
   -webkit-box-orient: horizontal;
@@ -65,7 +65,7 @@ body {
 }
 
 .container_ticket_list {
-  color: rgb(255, 255, 255);
+  color: #B1B6B4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ body {
   padding: 0;
 }
 .ticket_list li {
-  color: rgb(255, 255, 255);
+  color: #B1B6B4;
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -116,4 +116,66 @@ body {
 
 .ticket_list li:hover {
   background-color: #5a5a5a;
+}
+
+.historia_band {
+  margin: 3%;
+  margin-top: 20px;
+}
+.historia_band h1, .historia_band hr, .historia_band h2, .historia_band h4, .historia_band p, .historia_band tr, .historia_band th, .historia_band img {
+  color: #D7DDDB;
+}
+.historia_band .table_mienbros {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.historia_band .table_mienbros th, .historia_band .table_mienbros td {
+  border: solid 1px #D7DDDB;
+  padding: 1rem;
+  font-size: large;
+}
+.historia_band .table_mienbros th {
+  width: 20%;
+  border-bottom: 3px solid #D7DDDB;
+}
+.historia_band .table_mienbros td {
+  width: 30%;
+}
+.historia_band .imagenes_conciertos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.historia_band .imagenes_conciertos img {
+  width: 300px;
+}
+
+@media (max-width: 800px) {
+  .ticket_list .fecha_evento {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .ticket_list p {
+    display: none;
+  }
+}
+@media (max-width: 1020px) {
+  .imagenes_conciertos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagenes_conciertos img {
+    margin: 2rem;
+  }
 }

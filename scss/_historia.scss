@@ -1,0 +1,37 @@
+.historia_band{
+    margin: 3%;
+    margin-top: 20px;
+    h1, hr, h2, h4, p, tr, th, img{
+        color:#D7DDDB;
+    }
+
+    .table_mienbros{
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+
+        th, td{
+            border: solid 1px #D7DDDB;
+            padding: 1rem;
+            font-size: large;
+        }
+
+        th{
+            width: 20%;
+            border-bottom: 3px solid #D7DDDB;
+        }
+
+        td{
+            width: 30%;
+        }
+    }
+
+    .imagenes_conciertos{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 300px;
+        }
+    }
+}
+
