@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #030303;
   margin: 20px;
 }
 
@@ -81,7 +81,7 @@ body {
           align-items: center;
 }
 .container_ticket_list ul {
-  width: 85%;
+  width: 90%;
 }
 
 .ticket_list {
@@ -154,6 +154,52 @@ body {
   width: 300px;
 }
 
+footer {
+  border-top: 1px solid #D7DDDB;
+}
+footer .container_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "texto_footer texto_footer foto_logo" "logo_redes logo_redes foto_logo";
+  width: 95%;
+  height: 20%;
+  color: #D7DDDB;
+}
+footer .texto_footer {
+  grid-area: texto_footer;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+footer .logo_redes {
+  grid-area: logo_redes;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .logo_redes img {
+  width: 90px;
+}
+footer .foto_logo {
+  grid-area: foto_logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 @media (max-width: 800px) {
   .ticket_list .fecha_evento {
     -webkit-box-orient: vertical;
@@ -177,5 +223,14 @@ body {
   }
   .imagenes_conciertos img {
     margin: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .container_footer {
+    display: block;
+    text-align: center;
+  }
+  footer .container_footer .foto_logo {
+    display: none;
   }
 }

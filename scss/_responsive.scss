@@ -28,3 +28,20 @@
         }
     }
 }
+
+
+// -------RESPONSIVE DE FOOTER--------- 
+
+
+@media screen and (max-width: 600px){
+    footer{
+        .container_footer{
+
+            display: block;
+            text-align: center;
+            .foto_logo{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+footer{
+  border-top: 1px solid #D7DDDB;
+
+    .container_footer{  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "texto_footer texto_footer foto_logo"
+          "logo_redes logo_redes foto_logo";
+        width: 95%;
+        height: 20%;
+        color: #D7DDDB;
+      }
+      
+      .texto_footer { grid-area: texto_footer; 
+      text-align: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+      
+      .logo_redes { grid-area: logo_redes;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+
+        img{
+          width: 90px;
+        }
+      }
+      
+      .foto_logo { grid-area: foto_logo;
+        display: flex;
+        justify-content: end;
+      }  
+}
+    
