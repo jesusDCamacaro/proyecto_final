@@ -1,7 +1,15 @@
+.nav {
+  border-bottom: 1px solid #bbb;
+}
 .nav a {
   font-size: medium;
   color: #B1B6B4;
   font-family: "tex_gyre_herosregular";
+}
+.nav a:hover {
+  width: 3, 5rem;
+  background-color: #B1B6B4;
+  border-radius: 15px;
 }
 
 * {
@@ -11,7 +19,8 @@
 
 body {
   background-color: #030303;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .container_video {
@@ -87,6 +96,7 @@ body {
 .ticket_list {
   list-style-type: none;
   padding: 0;
+  margin: 30px;
 }
 .ticket_list li {
   color: #B1B6B4;
@@ -111,6 +121,8 @@ body {
           justify-content: space-between;
 }
 .ticket_list li p {
+  text-decoration: none;
+  list-style: none;
   font-size: 1vw;
 }
 
@@ -122,8 +134,12 @@ body {
   margin: 3%;
   margin-top: 20px;
 }
-.historia_band h1, .historia_band hr, .historia_band h2, .historia_band h4, .historia_band p, .historia_band tr, .historia_band th, .historia_band img {
+.historia_band hr, .historia_band h2, .historia_band h4, .historia_band p, .historia_band tr, .historia_band th, .historia_band img {
+  text-align: justify;
   color: #D7DDDB;
+}
+.historia_band h1 {
+  color: #B18A67;
 }
 .historia_band .table_mienbros {
   width: 100%;
@@ -152,6 +168,67 @@ body {
 }
 .historia_band .imagenes_conciertos img {
   width: 300px;
+}
+
+main h1 {
+  color: #D7DDDB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  width: 16rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #D7DDDB;
+  border-radius: 5%;
+  text-align: justify;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.card img {
+  width: 100%;
+}
+.card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  background-color: #D7DDDB;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+
+.container_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer {

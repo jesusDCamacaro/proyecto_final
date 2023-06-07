@@ -1,7 +1,14 @@
 .nav{
+    border-bottom: 1px solid #bbb;
     a{
         font-size: medium;
         color: #B1B6B4; 
         font-family: 'tex_gyre_herosregular';
+    }
+
+    a:hover{
+        width: 3,5rem;
+        background-color: #B1B6B4;
+        border-radius: 15px;
     }
 }

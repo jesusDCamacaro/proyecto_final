@@ -1,0 +1,46 @@
+main{
+    h1{
+        color: #D7DDDB;
+        display: flex;
+        justify-content: center;
+    }
+
+    section{
+        display: flex;
+    }
+}
+
+.card{
+    width: 16rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #D7DDDB;
+    border-radius: 5%;
+    text-align: justify;
+    justify-content: space-evenly;
+
+    img{
+        width: 100%;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: #D7DDDB;
+        color: black;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: .2rem;
+    }
+}
+
+.container_cards{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}

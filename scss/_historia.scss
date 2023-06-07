@@ -1,9 +1,15 @@
 .historia_band{
     margin: 3%;
     margin-top: 20px;
-    h1, hr, h2, h4, p, tr, th, img{
+    hr, h2, h4, p, tr, th, img{
+        text-align: justify;
         color:#D7DDDB;
     }
+
+    h1{
+        color: #B18A67;
+    }
+
 
     .table_mienbros{
         width: 100%;
