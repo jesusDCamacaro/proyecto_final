@@ -2,10 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 3rem;
     padding: 1rem;
 
     img{
+        margin:1rem;
         width: 100%;
         transition: 1s;
     }

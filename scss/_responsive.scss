@@ -1,3 +1,64 @@
+// --------RESPONSIVE DE INDEX--------
+@media (max-width: 860px){
+    .container_video{
+        .video_musica{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .container_video{
+        .video_musica{
+            video{
+                width: 450px;
+            }
+        }
+    }
+} 
+
+@media (max-width: 480px){
+    .container_video{
+        .video_musica{
+            video{
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .container_video{
+        .video_musica{
+            video{
+                width: 280px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .container_gira_list{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .gira_list{
+        flex-direction: column;
+
+        h2{
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+            font-size: medium;
+        }
+        h4{
+            display: none;
+        }
+    }
+}
+
+
 // ----------RESPONSIVE DE TOURS-----------
 
 @media (max-width: 800px){
