@@ -27,6 +27,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container_albums h2 {
+  color: #B1B6B4;
+  margin: 2rem;
+  padding: 1rem;
+}
+.container_albums .albums_recientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -34,10 +51,10 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 3rem;
-  padding: 1rem;
 }
 .container_albums img {
+  margin: 3rem;
+  padding: 1rem;
   margin: 1rem;
   width: 100%;
   -webkit-transition: 1s;
@@ -259,16 +276,15 @@ hr {
 .historia_band .table_mienbros td {
   width: 30%;
 }
-.historia_band .imagenes_conciertos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.historia_band .imagenes_conciertos img {
-  width: 300px;
+
+.carrusel_img_conciertos {
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main h1 {

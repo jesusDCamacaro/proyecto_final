@@ -34,12 +34,15 @@
         }
     }
 
-    .imagenes_conciertos{
-        display: flex;
-        justify-content: space-between;
-        img{
-            width: 300px;
-        }
-    }
+    
 }
+    // .imagenes_conciertos{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
 
+    .carrusel_img_conciertos{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
