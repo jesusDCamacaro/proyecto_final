@@ -12,23 +12,33 @@
     }
 
     .albums_recientes{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
+    overflow-x: hidden;
 
-img{
-        margin: 3rem;
-        padding: 1rem;
-        margin:1rem;
-        width: 100%;
-        transition: 1s;
     }
 
-    img:hover{
-        transform: scale(1.15);
+    a{
+        justify-content: center;
+        align-items: center;
+
+        img{
+            margin: 3rem;
+            padding: 1rem;
+            margin:1rem;
+            width: 100%;
+            transition: 1s;
+            }
+        
+            // img:hover{
+            //     transform: scale(1.15);
+            // }
+
     }
+
 }
 
 .container_gira_list{
