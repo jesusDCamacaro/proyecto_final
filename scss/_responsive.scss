@@ -1,6 +1,14 @@
 // --------RESPONSIVE DE INDEX--------
 
-
+@media (max-width: 490px){
+    .container_albums{
+        .albums_recientes{
+            a{
+                width: 280px;
+            }
+        }
+    }
+}
 @media (max-width: 860px){
     .container_video{
         .video_musica{

@@ -43,6 +43,7 @@ body {
   padding: 1rem;
 }
 .container_albums .albums_recientes {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,18 +54,23 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-x: hidden;
 }
-.container_albums img {
+.container_albums a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container_albums a img {
   margin: 3rem;
   padding: 1rem;
   margin: 1rem;
   width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
-}
-.container_albums img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
 }
 
 .container_gira_list {
@@ -483,6 +489,11 @@ footer .foto_logo {
   color: #D7DDDB;
 }
 
+@media (max-width: 490px) {
+  .container_albums .albums_recientes a {
+    width: 280px;
+  }
+}
 @media (max-width: 860px) {
   .container_video .video_musica {
     -webkit-box-orient: vertical;
