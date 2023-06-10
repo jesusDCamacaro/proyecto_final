@@ -45,4 +45,9 @@ main{
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
+
+    a:hover{
+        background-color: #030303;
+        color: #D7DDDB;
+    }
 }

@@ -1,4 +1,6 @@
 // --------RESPONSIVE DE INDEX--------
+
+
 @media (max-width: 860px){
     .container_video{
         .video_musica{
@@ -90,6 +92,28 @@
     }
 }
 
+// -------RESPONSIVE DE COMPRA.HTML--------
+
+@media (max-width: 1055px){
+    .formulario_de_compra{
+        .row{
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 606px){
+    .formulario_de_compra{
+        .row{
+            .col{
+                .inputBox{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
 
 // -------RESPONSIVE DE FOOTER--------- 
 

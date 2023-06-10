@@ -5,6 +5,8 @@
   font-size: medium;
   color: #B1B6B4;
   font-family: "tex_gyre_herosregular";
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 .nav a:hover {
   width: 3, 5rem;
@@ -216,6 +218,9 @@ hr {
   padding: 0;
   margin: 30px;
 }
+.ticket_list a {
+  text-decoration: none;
+}
 .ticket_list li, .ticket_list hr {
   color: #B1B6B4;
   padding: 10px;
@@ -347,6 +352,10 @@ main section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.container_cards a:hover {
+  background-color: #030303;
+  color: #D7DDDB;
+}
 
 footer {
   border-top: 1px solid #D7DDDB;
@@ -392,6 +401,86 @@ footer .foto_logo {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+.form_compra {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario_de_compra {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D7DDDB;
+  text-align: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.formulario_de_compra .row {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.formulario_de_compra .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: medium;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+.formulario_de_compra .row .col .inputBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  margin: 5px;
+  padding: 5px;
+}
+.formulario_de_compra .row .col .inputBox img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario_de_compra .row .col .inputBox span {
+  width: 100%;
+  text-align: justify;
+}
+.formulario_de_compra .row .col .inputBox input {
+  width: 80%;
+}
+.formulario_de_compra .submit-btn {
+  border-radius: 10px;
+}
+.formulario_de_compra .submit-btn:hover {
+  background-color: #030303;
+  color: #D7DDDB;
 }
 
 @media (max-width: 860px) {
@@ -465,6 +554,22 @@ footer .foto_logo {
   }
   .imagenes_conciertos img {
     margin: 2rem;
+  }
+}
+@media (max-width: 1055px) {
+  .formulario_de_compra .row {
+    width: 90%;
+  }
+}
+@media (max-width: 606px) {
+  .formulario_de_compra .row .col .inputBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {
